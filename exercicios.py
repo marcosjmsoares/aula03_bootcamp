@@ -33,10 +33,10 @@
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
 
-log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+# log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
 
-if log['level'] == 'ERROR':
-    print(log['message'])
+# if log['level'] == 'ERROR':
+#     print(log['message'])
 
 
 ### Exercício 4: Validação de Dados de Entrada
@@ -45,11 +45,37 @@ if log['level'] == 'ERROR':
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
 
+#nome = str(input("Insira o nome: "))
+# idade_v = False
+# email_v = False
+# idade = int(input("Insira a idade: "))
+# email = str(input("Insira email: "))
+
+
+# while idade_v is not True and email_v is not True:
+#     if not 18 <= idade <= 65:
+#         print("Idade fora do intervalor premitido")
+#     elif "@" not in email or "." in email:
+#         print("email invalido")
+#     else:
+#         #  idade_v = True
+#         #  email_v = True
+#         print("Dados de ususarios validos")
+
+
 ### Exercício 5: Detecção de Anomalias em Dados de Transações
 # Você está trabalhando em um sistema de detecção de fraude e precisa identificar 
 # transações suspeitas. Uma transação é considerada suspeita se o valor for superior 
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
+
+transacao = {'valor': 12000, 'hora': 20}
+
+if transacao['valor'] > 10000 and (9 < transacao['hora'] > 18):
+    print("transacao suspeita")
+else:
+    print("Transacao ok")
+
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
