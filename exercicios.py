@@ -69,12 +69,12 @@
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
 
-transacao = {'valor': 12000, 'hora': 20}
+# transacao = {'valor': 12000, 'hora': 20}
 
-if transacao['valor'] > 10000 and (9 < transacao['hora'] > 18):
-    print("transacao suspeita")
-else:
-    print("Transacao ok")
+# if transacao['valor'] > 10000 and (9 < transacao['hora'] > 18):
+#     print("transacao suspeita")
+# else:
+#     print("Transacao ok")
 
 
 ### Exercício 6. Contagem de Palavras em Textos
@@ -90,7 +90,7 @@ else:
 
 # for palavra in palavras:
 #     if palavra in contagem_de_palavras:
-#         contagem_de_palavras[palavra] = +1
+#         contagem_de_palavras[palavra] += 1
 #     else:
 #         contagem_de_palavras[palavra] = 1
 
