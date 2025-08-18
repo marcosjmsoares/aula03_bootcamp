@@ -41,16 +41,17 @@
 # você precisa garantir que cada usuário tenha idade entre 18 e 65 anos e tenha 
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
-idade = int(input("Insira a idade: "))
-email = str(input("Insira o email: "))
+# idade = int(input("Insira a idade: "))
+# email = str(input("Insira o email: "))
 
-#if (idade >=18 and idade <= 65): 
-if not 18 <= idade <= 65:
-    print("Idade Invalida!")
-elif email not in "@" or email not in ".":
-    print("Email invalido!")
-else:
-    print("Dados de usuarios validos")
+# #if (idade >=18 and idade <= 65): #errado padrao sql
+# if not 18 <= idade <= 65:
+#     print("Idade Invalida!")
+# elif email not in "@" or email not in ".":
+#     print("Email invalido!")
+# else:
+#     print("Dados de usuarios validos")
+
 # nome = ['Luciano']
 # for letra in nome:
 #     print(nome)
@@ -60,7 +61,12 @@ else:
 # transações suspeitas. Uma transação é considerada suspeita se o valor for superior 
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
+transacao = {'valor': 1200, 'hora': 12}
 
+if transacao['valor'] > 10000 and ( not 9 <= transacao['hora'] <= 18):
+    print("Fraude")
+else:
+    print("Transação normal")
 
 
 ### Exercício 6. Contagem de Palavras em Textos
