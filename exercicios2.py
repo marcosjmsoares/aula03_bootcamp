@@ -3,19 +3,26 @@
 # que todos os registros tenham valores positivos para `quantidade` e `preço`. 
 # Escreva um programa que verifique esses campos e imprima "Dados válidos" se ambos 
 # forem positivos ou "Dados inválidos" caso contrário.
-quantidade = int(input("Insira quantidade: "))
-preco = int(input("Insira preço: "))
+# quantidade = int(input("Insira quantidade: "))
+# preco = int(input("Insira preço: "))
 
-if quantidade > 0 and preco > 0:
-    print("Numero validos")
-else:
-    print("Numero invalidos")
+# if quantidade > 0 and preco > 0:
+#     print("Numero validos")
+# else:
+#     print("Numero invalidos")
 
 ### Exercício 2: Classificação de Dados de Sensor
 # Imagine que você está trabalhando com dados de sensores IoT. 
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
+temperatura = int(input("Insira a temperatura: "))
 
+if temperatura <= 0:
+    print("Baixa")
+elif temperatura > 0 and temperatura < 18:
+    print("Media")
+else:
+    print("Alta")
 
 
 ### Exercício 3: Filtragem de Logs por Severidade
@@ -32,9 +39,9 @@ else:
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
 
-nome = ['Luciano']
-for letra in nome:
-    print(nome)
+# nome = ['Luciano']
+# for letra in nome:
+#     print(nome)
 
 ### Exercício 5: Detecção de Anomalias em Dados de Transações
 # Você está trabalhando em um sistema de detecção de fraude e precisa identificar 
