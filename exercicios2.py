@@ -15,14 +15,14 @@
 # Imagine que você está trabalhando com dados de sensores IoT. 
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
-temperatura = int(input("Insira a temperatura: "))
+# temperatura = int(input("Insira a temperatura: "))
 
-if temperatura <= 0:
-    print("Baixa")
-elif temperatura > 0 and temperatura < 18:
-    print("Media")
-else:
-    print("Alta")
+# if temperatura <= 0:
+#     print("Baixa")
+# elif temperatura > 0 and temperatura < 18:
+#     print("Media")
+# else:
+#     print("Alta")
 
 
 ### Exercício 3: Filtragem de Logs por Severidade
@@ -30,7 +30,10 @@ else:
 # com severidade 'ERROR'. Dado um registro de log em formato de dicionário 
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
+# log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
 
+# if log['level'] == 'ERROR': 
+#     print(log['message'])
 
 
 ### Exercício 4: Validação de Dados de Entrada
@@ -38,7 +41,16 @@ else:
 # você precisa garantir que cada usuário tenha idade entre 18 e 65 anos e tenha 
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
+idade = int(input("Insira a idade: "))
+email = str(input("Insira o email: "))
 
+#if (idade >=18 and idade <= 65): 
+if not 18 <= idade <= 65:
+    print("Idade Invalida!")
+elif email not in "@" or email not in ".":
+    print("Email invalido!")
+else:
+    print("Dados de usuarios validos")
 # nome = ['Luciano']
 # for letra in nome:
 #     print(nome)
