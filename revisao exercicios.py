@@ -72,39 +72,55 @@
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
 
-texto = "Hoje estou estudando o bootcamp de python. Recomendo fortemente esse bootcamp."
-novo_texto = texto.replace(",","").replace(".","")
-palavras = novo_texto.split()
+# texto = "Hoje estou estudando o bootcamp de python. Recomendo fortemente esse bootcamp."
+# novo_texto = texto.replace(",","").replace(".","")
+# palavras = novo_texto.split()
 
-print(palavras)
+# print(palavras)
 
-contagem = {}
+# contagem = {}
 
-for palavra in palavras:
-    if palavra in contagem:
-        contagem[palavra] += 1
-    elif palavra not in contagem:
-        contagem[palavra] = 1
+# for palavra in palavras:
+#     if palavra in contagem:
+#         contagem[palavra] += 1
+#     elif palavra not in contagem:
+#         contagem[palavra] = 1
 
-    print(f"Palavra atual: {palavra}")
-    print(f"Estado do dicionário: {contagem}")
-    print("-----")
-print(contagem)        
+#     print(f"Palavra atual: {palavra}")
+#     print(f"Estado do dicionário: {contagem}")
+#     print("-----")
+# print(contagem)        
 
 
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
+# numeros = [10,20,30,40,50]
+# minimo = min(numeros)
+# maximo = max(numeros)
+# normalizados = [(x - minimo) / (maximo - minimo) for x in numeros]
 
+# print(normalizados)
 
 
 ### Exercício 8. Filtragem de Dados Faltantes
 # Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando
+# usuarios = [
+#     {"nome": "Alice", "email": "alice@example.com"},
+#     {"nome": "Bob", "email": ""},
+#     {"nome": "Carol", "email": "carol@example.com"}
+# ]
 
+# usuarios_validos = [usuario for usuario in usuarios if usuario["email"]] #if usuario["email"] apenas se nao for vazio
+
+# print(usuarios_validos)
 
 
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
+lista_dados = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
+lista_par = [numero for numero in lista_dados if numero % 2 == 0]
+print(lista_par)
 
 
 ### Exercício 10. Agregação de Dados por Categoria
