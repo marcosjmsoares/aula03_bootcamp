@@ -117,23 +117,59 @@
 
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
-lista_dados = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+# lista_dados = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
-lista_par = [numero for numero in lista_dados if numero % 2 == 0]
-print(lista_par)
+# lista_par = [numero for numero in lista_dados if numero % 2 == 0]
+# print(lista_par)
 
 
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+# vendas = [
+#     {"produto": "TV Samsung 55", "Categoria": "TV", "valor": "3000"},
+#     {"produto": "Macbook", "Categoria": "Computador", "valor": "10000"},
+#     {"produto": "Iphone 14", "Categoria": "Celular", "valor": "5000"},
+#     {"produto": "Xiaomi Poco X6", "Categoria": "Celular", "valor": "2000"},
+#     {"produto": "Computador Positivo", "Categoria": "Computador", "valor": "500"},    
+#     {"produto": "Notebook Dell 14", "Categoria": "Computador", "valor": "4000"},
+#     {"produto": "TV 29", "Categoria": "TV", "valor": "1000"}
+# ]
 
+# soma_categoria = {}
 
+# # ERRADO
+# # for categoria in vendas: 
+# #     if categoria in soma_categoria: 
+# #         soma_categoria[categoria] += vendas["valor"] 
+# #     elif categoria not in soma_categoria: 
+# #         soma_categoria[categoria] = vendas["valor"]
+
+# for venda in vendas:  
+#     if venda["Categoria"] in soma_categoria:
+#         soma_categoria[venda["Categoria"]] += int(venda["valor"])
+#     else:
+#         soma_categoria[venda["Categoria"]] = int(venda["valor"])
+
+# print(soma_categoria)
 
 ### Exercícios com WHILE
 
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
 
+texto = ""
+while texto.lower() != 'sair':
+    texto = str(input("Insira uma palavra:"))
+    if texto.lower() != "sair":
+        print("Palavra Erradas")
 
+print("Palavra correta")        
+
+# dados = []
+# entrada = ""
+# while entrada.lower() != "sair":
+#     entrada = input("Digite um valor (ou 'sair' para terminar): ")
+#     if entrada.lower() != "sair":
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
