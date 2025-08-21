@@ -157,28 +157,35 @@
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
 
-texto = ""
-while texto.lower() != 'sair':
-    texto = str(input("Insira uma palavra:"))
-    if texto.lower() != "sair":
-        print("Palavra Erradas")
+# texto = ""
+# while texto.lower() != 'sair':
+#     texto = str(input("Insira uma palavra:"))
+#     if texto.lower() != "sair":
+#         print("Palavra Errada")
 
-print("Palavra correta")        
-
-# dados = []
-# entrada = ""
-# while entrada.lower() != "sair":
-#     entrada = input("Digite um valor (ou 'sair' para terminar): ")
-#     if entrada.lower() != "sair":
+# print("Palavra correta")        
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
 
+# numero = ""
+# while numero != 5:
+#     numero = int(input("Insira um número de 1 a 10:"))
+#     if numero != 5:
+#         print("Numero Invalido")
 
+# print("Numero Válido")
 
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
+pagina_atual = 1
+pagina_total = 5
 
+while pagina_atual <= pagina_total:
+    print(f"Processando página {pagina_atual} de {pagina_total}")
+    pagina_atual +=1
+
+print("Todas as páginas foram processadas")
 
 
 ### Exercício 14. Tentativas de Conexão
